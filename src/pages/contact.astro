@@ -24,11 +24,52 @@ const header = {
 
 <Layout title={SEO.title} description={SEO.description}>
   <!-- Verborgen formulier voor Netlify -->
-  <form name="golftrip-aanvraag" data-netlify="true" hidden>
-    <input type="text" name="naam" />
-    <input type="email" name="email" />
-    <textarea name="algemene_wensen"></textarea>
-  </form>
+	<form name="golftrip-aanvraag" data-netlify="true" hidden>
+	<input type="text" name="naam" />
+	<input type="email" name="email" />
+	<input type="tel" name="telefoon" />
+	<select name="aantal_personen">
+		<option value="1">1</option>
+		<option value="2">2</option>
+		<option value="3">3</option>
+		<option value="4">4</option>
+		<option value="5">5</option>
+		<option value="6">6</option>
+		<option value="7">7</option>
+		<option value="8">8</option>
+		<option value="9">9</option>
+		<option value="10">10</option>
+		<option value="11">11</option>
+		<option value="12">12</option>
+	</select>
+	<input type="date" name="begindatum" />
+	<input type="date" name="eind />
+	<input type="number" name="budget" />
+	<textarea name="algemene_wensen"></textarea>
+	<input type="text" name="bestemming" />
+	<select name="reismethode">
+		<option value="auto">Eigen auto</option>
+		<option value="vliegtuig">Vliegtuig</option>
+	</select>
+	<select name="tickets">
+		<option value="ja">Ja</option>
+		<option value="nee">Nee</option>
+	</select>
+	<select name="huurauto">
+		<option value="ja">Ja</option>
+		<option value="nee">Nee</option>
+	</select>
+	<input="number" name="golfrondes" />
+	<input type="text" name="type_golfbaan" />
+	<textarea name="specifieke_banen"></textarea>
+	<input type="checkbox" name="accommodatie[]" value="hotel" />
+	<input type="checkbox" name="accommodatie[]" value="villa" />
+	<input type="checkbox" name="accommodatie[]" value="(air)bnb" />
+	<input type="checkbox" name="accommodatie[]" value="resort" />
+	<input type="checkbox" name="accommodatie[]" value="anders, namelijk:" />
+	<input type="text" name="accommodatie_anders" />
+	<textarea name="overige_wensen"></textarea>
+	</form>
 	<FormHero
 		title={header.title}
 		text={header.text}
