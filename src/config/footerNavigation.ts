@@ -35,77 +35,61 @@ export interface FooterData {
 
 export const footerNavigationData: FooterData = {
 	footerAbout: {
-		title: 'Foxi.',
+		title: 'JouwGolftrip',
 		aboutText:
-			'Expertly made, responsive, accessible components in React and HTML ready to be used on your website or app. Just copy and paste them on your Tailwind CSS project.',
+			'Ik help jou en je vrienden aan een onvergetelijke golftrip — precies zoals jullie ‘m willen. Jij geeft aan wat jullie zoeken, ik stel de ideale trip voor jullie samen. Van mooie golfbanen tot fijne accommodaties: alles afgestemd op jullie wensen én budget.',
 		logo: {
 			src: '/logo.svg',
-			alt: 'The tailwind astro theme',
-			text: 'Foxi.'
+			alt: 'JouwGolftrip logo',
+			text: 'JouwGolftrip'
 		}
 	},
 	footerColumns: [
 		{
-			category: 'Product',
+			category: 'JouwGolftrip',
 			subCategories: [
 				{
-					subCategory: 'Features',
-					subCategoryLink: '/features'
+					subCategory: 'Werkwijze',
+					subCategoryLink: '/#highlight-1'
 				},
 				{
-					subCategory: 'FAQ',
+					subCategory: 'Inspiratie',
+					subCategoryLink: '/#features'
+				},
+				{
+					subCategory: 'Kosten',
+					subCategoryLink: '/#highlight-2'
+				}
+			]
+		},
+		{
+			category: 'Informatie',
+			subCategories: [
+				{
+					subCategory: 'Veelgestelde vragen',
 					subCategoryLink: '/faq'
 				},
 				{
-					subCategory: 'Pricing',
-					subCategoryLink: '/pricing'
-				},
-				{
-					subCategory: 'Changelog',
-					subCategoryLink: '/changelog'
-				},
-				{
-					subCategory: 'Terms',
-					subCategoryLink: '/terms'
+					subCategory: 'Over mij',
+					subCategoryLink: '/faq#overmij'
 				}
 			]
 		},
 		{
-			category: 'About us',
+			category: 'Contact',
 			subCategories: [
 				{
-					subCategory: 'About us',
-					subCategoryLink: '/'
+					subCategory: 'Vraag nu aan',
+					subCategoryLink: '/contact'
 				},
-				{
-					subCategory: 'News',
-					subCategoryLink: '/blog'
-				},
-				{
-					subCategory: 'Careers',
-					subCategoryLink: '/blog'
-				}
-			]
-		},
-		{
-			category: 'Get in touch',
-			subCategories: [
 				{
 					subCategory: 'Contact',
-					subCategoryLink: '/contact'
-				},
-				{
-					subCategory: 'Support',
-					subCategoryLink: '/contact'
-				},
-				{
-					subCategory: 'Join us',
 					subCategoryLink: '/contact'
 				}
 			]
 		}
 	],
 	subFooter: {
-		copywriteText: '© Foxi 2024.'
+		copywriteText: '© JouwGolftrip 2025'
 	}
 }

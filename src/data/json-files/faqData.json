@@ -1,56 +1,65 @@
 [
 	{
-		"question": "What is the cost of the basic plan?",
-		"reply": "The basic plan is $9.99 per month, which includes access to core features and limited integrations. This plan is perfect for individuals or small teams looking to improve their productivity without a large investment.",
-		"category": "pricing",
-		"open": true
-	},
-	{
-		"question": "Are there any discounts for annual subscriptions?",
-		"reply": "Yes, we offer a 20% discount on annual subscriptions for all our plans. By choosing an annual subscription, you can save money and ensure uninterrupted access to all Foxi features for the entire year.",
-		"category": "pricing",
+		"question": "Wat doet JouwGolftrip?",
+		"reply": "We helpen in het organiseren van een golftrip die volledig is afgestemd op jouw wensen, hoe specifiek of globaal die ook zijn. Op basis van jouw reisdata en budget stel ik een golftrip samen alsof het voor mijzelf en mijn eigen vrienden is!",
+		"category": "faq-algemeen",
+		"id": "faq-algemeen",
 		"open": false
 	},
 	{
-		"question": "Can I change my subscription plan at any time?",
-		"reply": "Yes, you can upgrade or downgrade your subscription plan at any time from your account settings. This flexibility allows you to adjust your plan based on your changing needs and usage.",
-		"category": "pricing",
+		"question": "Hoe werkt het precies?",
+		"reply": "Jij geeft je wensen aan via het aanvraagformulier. Ik ga op basis daarvan aan de slag met een voorstel op maat. Geen standaardpakketten, maar een reis die echt past bij jou en je groep.",
+		"category": "faq-algemeen",
+		"id": "faq-algemeen",
 		"open": false
 	},
 	{
-		"question": "Is there a free trial available?",
-		"reply": "Yes, we offer a 14-day free trial for all new users. During the trial, you can explore all the features of Foxi without any commitment, allowing you to see how it fits into your workflow.",
-		"category": "pricing",
+		"question": "Boek jij de reis voor mij?",
+		"reply": "Nee. Ik geef je een compleet reisvoorstel met links naar boekbare hotels, golfbanen en eventueel vervoer. Jij boekt vervolgens zelf, wanneer jij wilt. Dat is transparanter en flexibeler.",
+		"category": "faq-algemeen",
+		"id": "faq-algemeen",
 		"open": false
 	},
 	{
-		"question": "Do you offer refunds?",
-		"reply": "We offer a 30-day money-back guarantee if you are not satisfied with our service. Simply contact our support team within 30 days of your purchase, and we'll process your refund.",
-		"category": "pricing",
+		"question": "Wat zijn de voordelen van zelf boeken?",
+		"reply": "<ul class='list-disc ml-6'><li>Je behoudt controle over je reserveringen.</li><li>Je kunt boeken via jouw favoriete boekingsplatformen (bijv. Booking, Airbnb, rechtstreeks) en zo ook jouw persoonlijke kortingen gebruiken en/of punten sparen.</li><li>Je ziet precies wat het kost.</li><li>Je hebt zelf contact bij wijzigingen of annuleringen waardoor je heel flexibel bent. Toch een nachtje minder in die Aribnb? Wel ontbijt toevoegen in je hotel? Je hebt het zelf in de hand.</li><li>Je betaalt geen marge aan mij of een reisbureau.</li></ul>",
+		"category": "faq-algemeen",
+		"id": "voordeel",
 		"open": false
 	},
 	{
-		"question": "How do I cancel my subscription?",
-		"reply": "You can cancel your subscription from your account settings at any time. After cancellation, you will still have access to your account until the end of the billing cycle.",
-		"category": "pricing",
+		"question": "Wat als ik geen idee heb waar ik naartoe wil?",
+		"reply": "Geen probleem! Ik help je graag met suggesties die passen bij je budget, reisperiode en groepssamenstelling.",
+		"category": "faq-algemeen",
+		"id": "faq-algemeen",
 		"open": false
 	},
 	{
-		"question": "Can I use Foxi with Google Calendar?",
-		"reply": "Yes, Foxi integrates seamlessly with Google Calendar for easy scheduling and task management. This integration helps you keep track of your events and tasks in one place.",
-		"category": "integrations",
-		"open": true
-	},
-	{
-		"question": "Does Foxi work with Slack?",
-		"reply": "Yes, you can integrate Foxi with Slack to receive notifications and updates directly in your channels. This allows you to stay informed about your projects without leaving Slack.",
-		"category": "integrations",
+		"question": "Wat kost een voorstel?",
+		"reply": "Voor mijn service betaal je alleen een vaste prijs voor het uitzoekwerk — dus geen commissie of verborgen kosten. Jij blijft zelf in charge over de boekingen. <br> <br> <ul class='list-disc ml-6'><li><strong>Trip van 2-3 dagen:</strong> €49 </li> <li><strong>Trip van 4-6 dagen:</strong> €69 </li><li><strong>Trip van >7 dagen:</strong> <a href='/contact'>Neem contact met mij op</a></li></ul>",
+		"category": "faq-algemeen",
+		"id": "faq-algemeen",
 		"open": false
 	},
 	{
-		"question": "How do I connect Foxi with Trello?",
-		"reply": "To connect Foxi with Trello, go to the integrations page in your settings and follow the instructions to link your accounts. This integration helps you manage your Trello boards and Foxi projects together.",
-		"category": "integrations",
+		"question": "Hoe werkt de betaling?",
+		"reply": "Nadat ik jouw golftrip hebben samengesteld en het voorstel met je gedeeld heb, ontvang je van mij een betaallink. Deze kan ik per mail, sms of WhatsApp sturen — wat voor jou het makkelijkst is. De betaling verloopt veilig en eenvoudig via jouw eigen bank app/Tikkie.",
+		"category": "faq-algemeen",
+		"id": "faq-algemeen",
+		"open": false
+	},
+	{
+		"question": "Kunnen we ook bellen of appen?",
+		"reply": "Zeker. Na je aanvraag kunnen we even bellen of appen om je wensen te bespreken als je dat fijn vindt.",
+		"category": "faq-algemeen",
+		"id": "faq-algemeen",
+		"open": false
+	},
+	{
+		"question": "Hoe snel ontvang ik een voorstel?",
+		"reply": "Ik probeer je binnen een week na je aanvraag een voorstel aan te leveren met daarin alle onderdelen die we hebben afgestemd, zoals banen en verblijf.",
+		"category": "faq-algemeen",
+		"id": "faq-algemeen",
 		"open": false
 	},
 	{

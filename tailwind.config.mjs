@@ -27,23 +27,24 @@ export default {
     {
       pattern: /text-(left|center|right)/,
     },
+    'list-disc', 'ml-6', 'list-outside'
   ],
   theme: {
     extend: {
       colors: {
         transparent: "transparent",
         primary: {
-          50: "#fdf2f8",
-          100: "#fce7f3",
-          200: "#fbcfe8",
-          300: "#f9a8d4",
-          400: "#f472b6",
-          500: "#E2187D",
-          600: "#db2777",
-          700: "#be185d",
-          800: "#9d174d",
-          900: "#831843",
-          950: "#500724",
+          50: "#f7fee8",
+          100: "#eafbcb",
+          200: "#d6f4a1",
+          300: "#bbe869",
+          400: "#a1d93c",
+          500: "#71b000",
+          600: "#609600",
+          700: "#507d00",
+          800: "#406400",
+          900: "#324f00",
+          950: "#243800",
         },
         neutral: {
           50: "#f8fafc",

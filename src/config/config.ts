@@ -21,13 +21,13 @@ export interface Config {
 }
 
 export const configData: Config = {
-	siteTitle: 'Foxi. Tailwind CSS Astro Starter Kit by Oxygenna',
+	siteTitle: 'JouwGolftrip - Golfreizen op maat',
 	siteDescription:
-		'Foxi is a design and development agency that specializes in creating beautiful and functional websites.',
+		'Ik help jou en je vrienden aan een onvergetelijke golftrip — precies zoals jullie ‘m willen. Jij vertelt wat je zoekt, ik doe het uitzoekwerk. Van mooie banen tot fijne accommodaties: alles afgestemd op jouw wensen en budget.',
 	ogImage: '/og.jpg',
 	logo: {
 		src: '/logo.svg',
-		alt: 'Foxi. logo'
+		alt: 'JouwGolftrip Logo'
 	},
 	canonical: true,
 	noindex: false,

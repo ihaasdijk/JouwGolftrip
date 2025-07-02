@@ -11,19 +11,18 @@ import CTA from '../components/blocks/CTA/BasicDark.astro'
 
 // Content
 // - Testimonial background
-import testimonialBackground from '../assets/testimonial-bg-01.webp'
+import testimonialBackground from '../assets/testimonial-bg-01.png'
 // - SEO
 const SEO = {
-	title: 'Foxi | Your Productivity Toolkit',
+	title: 'JouwGolftrip | Golfreizen op maat',
 	description:
-		'Foxi is a powerful productivity toolkit designed to enhance your workflow and boost your productivity. With features like analytics, security, and integrations, Foxi is the perfect solution for your business.'
+		'Ik help jou en je vrienden aan een onvergetelijke golftrip — precies zoals jullie ‘m willen. Jij geeft aan wat jullie zoeken, ik stel de ideale trip voor jullie samen. Van mooie golfbanen tot fijne accommodaties: alles afgestemd op jullie wensen én budget.'
 }
 ---
 
 <Layout title={SEO.title} description={SEO.description}>
 	<Hero />
-	<Features />
-	<Testimonial bg={testimonialBackground} bgPosition="right" />
 	<HighlightBlocks />
-	<CTA />
+	<Testimonial bg={testimonialBackground} bgPosition="center" />
+	<Features />
 </Layout>

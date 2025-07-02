@@ -16,8 +16,9 @@ type Props = {
 	data: any
 	type?: 'left' | 'right'
 	classes?: string
+	activeId?: string
 }
-const { title, text, data, type = 'left', classes } = Astro.props
+const { title, text, data, type = 'left', classes, activeId } = Astro.props
 ---
 
 <StickySidebar classes={classes} type={type}>
@@ -27,6 +28,13 @@ const { title, text, data, type = 'left', classes } = Astro.props
 	</header>
 
 	<Card classes="divide-y divide-neutral-100 dark:divide-neutral-800">
-		{data.map((faq: any) => <FAQ title={faq.question} text={faq.reply} open={faq.open} />)}
+		{data.map((faq: any) => (
+  			<FAQ
+    			title={faq.question}
+    			text={faq.reply}
+    			open={faq.id === activeId}
+    			id={faq.id}
+  			/>
+		))}
 	</Card>
 </StickySidebar>

@@ -34,13 +34,13 @@ export interface NavData {
 export const navigationBarData: NavData = {
 	logo: {
 		src: '/logo.svg',
-		alt: 'The tailwind astro theme',
-		text: 'Foxi.'
+		alt: 'JouwGolftrip logo',
+		text: 'JouwGolftrip'
 	},
 	navItems: [
 		{ name: 'Home', link: '/' },
-		{ name: 'Pricing', link: '/pricing' },
-		{ name: 'Features', link: '/features' },
+		{ name: 'Veelgestelde vragen', link: '/faq' },
+/* 		{ name: 'Features', link: '/features' },
 		{
 			name: 'Resources',
 			link: '#',
@@ -50,8 +50,8 @@ export const navigationBarData: NavData = {
 				{ name: 'FAQ', link: '/faq' },
 				{ name: 'Terms', link: '/terms' }
 			]
-		},
+		}, */
 		{ name: 'Contact', link: '/contact' }
 	],
-	navActions: [{ name: 'Try it now', link: '/', style: 'primary', size: 'lg' }]
+	navActions: [{ name: 'Vraag nu aan', link: '/', style: 'primary', size: 'lg' }]
 }

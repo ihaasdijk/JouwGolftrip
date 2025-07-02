@@ -20,11 +20,11 @@ type Props = {
 	bgPosition?: 'left' | 'right' | 'center'
 }
 const {
-	blockquote = 'Foxi is like a rocket boost for our productivity! Its sleek design and out-of-this-world features make managing projects and team communication a breeze.',
-	figcaption = 'Sheryl Sandberg',
-	cite = 'CEO, Facebook',
+	blockquote = 'A bad day on the golf course is better than a good day in the office.',
+	figcaption = '',
+	cite = '',
 	bg,
-	bgPosition = 'center'
+	bgPosition = 'right'
 } = Astro.props
 ---
 
@@ -33,7 +33,7 @@ const {
 	mode="dark"
 	bg={bg}
 	bgPosition={bgPosition}
-	classes="dark:border-t border-y border-neutral-800"
+	classes="" //dark:border-t border-y border-neutral-800
 >
 	<Row>
 		<Col span="12">

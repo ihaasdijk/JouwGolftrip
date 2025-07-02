@@ -16,7 +16,7 @@ import { Image } from 'astro:assets'
 import Highlight from '../../ui/Highlight.astro'
 
 // Content
-import ctaImage from '../../../assets/cta-dark-bg.webp'
+import ctaImage from '../../../assets/testimonial-bg-01.png'
 import badge from '../../../assets/badge.svg'
 ---
 
@@ -25,17 +25,12 @@ import badge from '../../../assets/badge.svg'
 		<Col span="1" />
 		<Col span="10">
 			<CTA
-				title="Join Over 30,000 Satisfied Users!"
-				text="Discover why thousands of professionals trust our platform to streamline their workflow and enhance productivity. Get started today and see the difference for yourself!"
+				title="Ook een golftrip op maat?"
+				text="Ontdek hoe ik jou kan helpen aan een unieke golfervaring — afgestemd op jouw wensen én budget."
 				mode="dark"
 				bg={ctaImage}
 			>
-				<ChipNotification radius="rounded-full" classes="mb-6 box">
-					<Image src={badge} alt="Product of the Year" class="h-12 w-12" slot="button" />
-					<span class="hidden md:block">#1 Product of the Year,</span>
-					<Highlight classes="md:ml-2"> Product Hunt </Highlight>
-				</ChipNotification>
-				<Button size="lg" style="primary"> Get started now! </Button>
+				<Button size="lg" style="primary" link="/contact"> Start je aanvraag! </Button>
 			</CTA>
 		</Col>
 		<Col span="1" />

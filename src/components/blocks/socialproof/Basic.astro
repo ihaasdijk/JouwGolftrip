@@ -12,37 +12,32 @@ import Col from '../../ui/Col.astro'
 import { Image } from 'astro:assets'
 
 // Content
-import airtable from '../../../assets/logos/airtable-logo.svg'
-import asana from '../../../assets/logos/asana-logo.svg'
-import basecamp from '../../../assets/logos/basecamp-logo.svg'
-import evernote from '../../../assets/logos/evernote-logo.svg'
-import notion from '../../../assets/logos/notion-logo.svg'
-import slack from '../../../assets/logos/slack-logo.svg'
+import airbnb from '../../../assets/logos/airbnb-logo.svg'
+import booking from '../../../assets/logos/booking-logo.svg'
+import leadingcourses from '../../../assets/logos/leadingcourses-logo.svg'
+import skyscanner from '../../../assets/logos/skyscanner-logo.svg'
+import golfnl from '../../../assets/logos/golfnl-logo.svg'
 
 const images = [
 	{
-		image: airtable,
-		alt: 'Airtable logo'
+		image: airbnb,
+		alt: 'Airbnb logo'
 	},
 	{
-		image: asana,
-		alt: 'Asana logo'
+		image: booking,
+		alt: 'Booking.com logo'
 	},
 	{
-		image: basecamp,
-		alt: 'Basecamp logo'
+		image: golfnl,
+		alt: 'Golf.nl logo'
 	},
 	{
-		image: evernote,
-		alt: 'Evernote logo'
+		image: leadingcourses,
+		alt: 'Leading Courses logo'
 	},
 	{
-		image: notion,
-		alt: 'Notion logo'
-	},
-	{
-		image: slack,
-		alt: 'Slack logo'
+		image: skyscanner,
+		alt: 'Skyscanner logo'
 	}
 ]
 
@@ -53,11 +48,11 @@ type Props = {
 const { classes } = Astro.props
 ---
 
-<Section padding="bottom" classes={classes}>
+<Section id="overmij" padding="top" classes={classes + ' pt-32'}>
 	<Row>
 		<Col span="12" align="center">
-			<h2 class="!mb-6 text-base font-normal text-neutral-400 dark:text-neutral-600">
-				Trusted by <strong class="highlight">50,000+</strong> businesses
+			<h2 class="!mb-6 text-xl font-normal text-neutral-400 dark:text-neutral-600">
+				Boek via <strong class="highlight">jouw favoriete</strong> platformen:
 			</h2></Col
 		>
 	</Row>

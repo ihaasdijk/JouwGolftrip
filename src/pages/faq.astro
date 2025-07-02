@@ -11,44 +11,42 @@ import CTA from '../components/blocks/CTA/BasicDark.astro'
 // Data
 import faqData from '../data/json-files/faqData.json'
 // - FAQ Categories
-const faqPricing = faqData.filter((faq) => faq.category === 'pricing')
+const faqPricing = faqData.filter((faq) => faq.category === 'faq-algemeen')
 const faqIntegrations = faqData.filter((faq) => faq.category === 'integrations')
 
 // Content
-import faqImage1 from '../assets/faq/faq-01.png'
+import faqImage1 from '../assets/faq/faq-golf1.png'
+import faqImage2 from '../assets/faq/faq-golf.png'
+
 // - SEO
 const SEO = {
-	title: 'Foxi | Get Your Questions Answered with a Smile',
+	title: 'JouwGolftrip | Alles wat je wilt weten over jouw golfreis op maat',
 	description:
-		'Dive into the Foxi FAQ Funhouse to get answers to all your questions about pricing, integrations, features, and more. Discover how Foxi can make your work life more productive and enjoyable.'
+		'Vind snel het antwoord op al je vragen over JouwGolftrip, onze diensten, hoe het werkt en wie wij zijn.'
 }
 // - Page Header
 const header = {
-	title: 'Get Answers to Your <strong>Foxi</strong> Questions.',
-	text: 'Find answers to common questions about Foxi '
+	title: 'Veelgestelde vragen over <strong>JouwGolftrip</strong>',
+	text: 'Vind snel het antwoord op alles rondom jouw golfavontuur.'
 }
 ---
 
 <Layout title={SEO.title} description={SEO.description}>
 	<Hero title={header.title} text={header.text} />
 	<FAQ
-		title="Understanding Our Pricing Plans"
-		text="Get all the details on Foxi’s pricing plans. Learn about the costs, discounts, and subscription options to find the best plan that fits your needs and budget."
+		title="Alles wat je wilt weten"
+		text="Vind snel antwoord op de meestgestelde vragen over jouw op maat gemaakte golftrip."
 		data={faqPricing}
 	/>
 	<TextImage
-		title="Why Foxi’s Pricing Plans Offer Great Value"
-		text="At Foxi, we believe in providing exceptional value at every price point. Our pricing plans are designed to cater to a variety of needs, from individuals and small teams to large enterprises. Each plan includes access to our powerful features, seamless integrations, and top-notch customer support. "
+		title="Wie zit er achter JouwGolftrip?"
+		text="Hi, ik ben Ingmar, enthousiast golfer met een doel om (langzaam, maar gestaag) zoveel mogelijk banen in de wereld te spelen met vrienden en familie. <br><br> <strong>Waarom ik deze dienst aanbied?</strong> <br>Omdat ik het ontzettend leuk vind om golftrips te organiseren die écht kloppen. Voor mijn eigen vrienden en familie ben ik altijd degene die alles uitzoekt — van de banen tot het verblijf. Dat puzzelen met wensen, banen en budget geeft me energie. En omdat ik zelf maar beperkt op pad kan, help ik nu ook anderen met plezier aan hun ideale golfreis."
 		image={faqImage1}
-		mobileImage={faqImage1}
+		mobileImage={faqImage2}
 		imagePosition="left"
 		offsetImage
+		id="overmij"
 		classes="bg-neutral-50 dark:bg-neutral-900 lg:!py-64"
-	/>
-	<FAQ
-		title="Integrations Made Easy"
-		text="Discover how Foxi seamlessly integrates with your favorite tools and platforms. From Google Calendar to Slack, find out how to connect and enhance your productivity with powerful integrations."
-		data={faqIntegrations}
 	/>
 	<CTA />
 </Layout>

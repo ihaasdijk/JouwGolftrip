@@ -8,6 +8,7 @@
 import Section from '../../ui/Section.astro'
 import Row from '../../ui/Row.astro'
 import Col from '../../ui/Col.astro'
+import DynamicForm from '../../react/DynamicForm.jsx'
 // - UI
 import Form from '../contact/BasicForm.astro'
 
@@ -21,16 +22,16 @@ type Props = {
 const { id, title, text, classes } = Astro.props
 ---
 
-<Section id={id} classes={classes}>
+<Section id={id} classes={classes} stickyCol={true}>
 	<Row>
-		<Col span="6" classes={`self-center`}>
+		<Col span="6" classes="lg:sticky md:top-32 self-start h-fit z-10">
 			<header class="max-w-xl">
 				<h1 set:html={title} />
 				<p class="text-lg leading-relaxed">{text}</p>
 			</header>
 		</Col>
 		<Col span="6" classes="relative">
-			<Form classes="max-w-xl" />
+			<DynamicForm client:load />
 		</Col>
 	</Row>
 </Section>

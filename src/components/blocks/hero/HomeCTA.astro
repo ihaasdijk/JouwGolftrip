@@ -16,15 +16,15 @@ import AvatarGroup from '../../ui/AvatarGroup.astro'
 
 // Content
 // - Hero Image
-import heroImage from '../../../assets/hero-01.png'
+import heroImage from '../../../assets/hero-03.png'
 // - Avatars
 import user1 from '../../../assets/avatars/avatar-01.webp'
 import user2 from '../../../assets/avatars/avatar-02.webp'
 import user3 from '../../../assets/avatars/avatar-03.webp'
 const avatars = [
-	{ image: { src: user1.src, alt: 'user name' }, link: '/' },
-	{ image: { src: user2.src, alt: 'user name' }, link: '/' },
-	{ image: { src: user3.src, alt: 'user name' }, link: '/' }
+	{ image: { src: user1.src, alt: 'TPC Sawgrass' }, link: '/' },
+	{ image: { src: user2.src, alt: 'Five Nations' }, link: '/' },
+	{ image: { src: user3.src, alt: 'St. Andrews - Old Course' }, link: '/' }
 ]
 ---
 
@@ -33,20 +33,20 @@ const avatars = [
 		<Col span="2" />
 		<Col span="8" align="center">
 			<ChipNotification radius="rounded-full" classes="mb-6">
-				<strong>30K+</strong> satisfied customers
+				<strong>38K+</strong> banen om te ontdekken
 				<AvatarGroup avatars={avatars} radius="rounded-full" slot="button" />
 			</ChipNotification>
-			<h1>Enhance team <strong>performance</strong> with seamless integration</h1>
+			<h1>Een meerdaagse golftrip, volledig afgestemd op <strong>jouw wensen</strong> </h1>
 
-			<p class="pb-0 text-lg">Work smarter, not harder, with our innovative platform</p>
-			<Button size="lg" link="/">Get started for free</Button>
+			<p class="pb-0 text-lg">Spelen op <i>hidden gems</i>? Verblijven in een leuk huisje? Laat het uitzoekwerk aan mij over!</p>
+			<Button size="lg" link="/contact">Vraag nu Jouw Golftrip aan</Button>
 		</Col>
 		<Col span="2" />
 		<Col span="2" />
 		<Col span="8">
 			<Image
 				src={heroImage}
-				alt="Foxi. The tailwind astro theme"
+				alt="JouwGolftrip - golfreizen op maat"
 				class="translate-y-8 shadow-2xl shadow-neutral-200 dark:shadow-neutral-950"
 				format="webp"
 			/></Col
