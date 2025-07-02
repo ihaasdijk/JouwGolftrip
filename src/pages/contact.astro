@@ -23,6 +23,12 @@ const header = {
 ---
 
 <Layout title={SEO.title} description={SEO.description}>
+  <!-- Verborgen formulier voor Netlify -->
+  <form name="golftrip-aanvraag" netlify hidden>
+    <input type="text" name="naam" />
+    <input type="email" name="email" />
+    <textarea name="algemene_wensen"></textarea>
+  </form>
 	<FormHero
 		title={header.title}
 		text={header.text}
