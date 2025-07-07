@@ -49,9 +49,11 @@ const { title, description, ogImage, noindex, classes } = Astro.props
 		<Scriprs />
 
 		<script>
-  // Scroll na klikken op een interne hash-link (zoals /faq#overmij)
   document.addEventListener('click', (e) => {
-    const link = e.target.closest('a[href*="#"]');
+    const target = e.target;
+    if (!(target instanceof Element)) return;
+
+    const link = target.closest('a[href*="#"]');
     if (!link) return;
 
     const url = new URL(link.href);
@@ -62,17 +64,15 @@ const { title, description, ogImage, noindex, classes } = Astro.props
 
     // Wacht even na navigatie en scroll naar het element
     if (!isSamePath) {
-      // Laat de browser naar de nieuwe pagina navigeren
       setTimeout(() => {
         const el = document.querySelector(targetHash);
         if (el) {
           el.scrollIntoView({ behavior: 'smooth' });
         }
-      }, 400); // wacht lang genoeg tot de DOM geladen is
+      }, 400);
     }
   });
 
-  // Scroll bij herladen pagina met hash direct
   window.addEventListener('load', () => {
     const hash = window.location.hash;
     if (hash) {
@@ -83,6 +83,6 @@ const { title, description, ogImage, noindex, classes } = Astro.props
     }
   });
 </script>
-
 	</body>
 </html>
+
