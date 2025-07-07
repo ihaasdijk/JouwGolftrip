@@ -39,6 +39,7 @@ export const navigationBarData: NavData = {
 	},
 	navItems: [
 		{ name: 'Home', link: '/' },
+		{ name: 'Ervaringen', link: '/ervaringen' },
 		{ name: 'Veelgestelde vragen', link: '/faq' },
 /* 		{ name: 'Features', link: '/features' },
 		{

@@ -59,12 +59,20 @@ export const footerNavigationData: FooterData = {
 				{
 					subCategory: 'Kosten',
 					subCategoryLink: '/#highlight-2'
+				},
+				{
+					subCategory: 'Voorbeeldtrip',
+					subCategoryLink: '/ervaringen#voorbeeld'
 				}
 			]
 		},
 		{
 			category: 'Informatie',
 			subCategories: [
+				{
+					subCategory: 'Ervaringen',
+					subCategoryLink: '/ervaringen'
+				},
 				{
 					subCategory: 'Veelgestelde vragen',
 					subCategoryLink: '/faq'

@@ -1,0 +1,37 @@
+---
+// Components
+// - Layout
+import Layout from '../layouts/Layout.astro'
+// - UI
+import CTA from '../components/blocks/CTA/BasicDark.astro'
+import ContactCards from '../components/blocks/contact/ContactCards.astro'
+import TextImage from '../components/blocks/basic/TextImage.astro'
+
+// Content
+import faqImage1 from '../assets/voorbeeld-full.png'
+import faqImage2 from '../assets/voorbeeld-full.png'
+
+// Content
+// - SEO
+const SEO = {
+	title: 'JouwGolftrip | Hoor de ervaringen van anderen',
+	description:
+		'Lees meer over hoe anderen een golfreis van JouwGolftrip ervaren hebben.'
+}
+
+---
+
+<Layout title={SEO.title} description={SEO.description}>
+	<ContactCards classes="dark:bg-neutral-950/80" />
+	<TextImage
+		title="Voorbeeld van een golftrip door Schotland"
+		text="Niets mooier dan een paar dagen golfen in het land waar het allemaal begonnen is: Schotland! Zoveel banen, zoveel mogelijkheden - maar wat dacht je bijvoorbeeld van:<br><br><strong>Vrijdag:</strong><br><li>Vlucht van Schiphol (Amsterdam) naar Edinburgh</li><li>Spelen op Aberdour Golf Club (Aberdour)</li><li>Overnachting in Airbnb in St. Andrews (<i>'The Home of Golf' </i>)</li><br><strong>Zaterdag:</strong><br><li>Spelen op New Course (St. Andrews)</li><li>Overnachting Airbnb</li><br><strong>Zondag:</strong><br><li>Spelen op Kinghorn Golf Club (Kinghorn)</li><li>Vlucht van Edinburgh naar Schiphol (Amsterdam)</li>"
+		image={faqImage1}
+		mobileImage={faqImage2}
+		imagePosition="left"
+		offsetImage
+		id="voorbeeld"
+		classes="bg-neutral-50 dark:bg-neutral-900 lg:!py-32"
+	/>
+	<CTA />
+</Layout>

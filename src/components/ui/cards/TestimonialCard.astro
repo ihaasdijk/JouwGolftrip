@@ -1,0 +1,36 @@
+---
+import Card from './partials/Card.astro'
+import CardBody from './partials/CardBody.astro'
+
+type Props = {
+  name: string
+  date: string
+  flag: string
+  text: string
+  classes?: string
+}
+
+const { name, date, flag, text, classes = '' } = Astro.props
+---
+
+<Card classes={`text-left dark:!bg-neutral-800/50 ${classes}`}>
+  <CardBody>
+    <!-- Vlag + Naam + Datum -->
+    <div class="flex items-center gap-4 mb-4">
+      <!-- Iets grotere vlag -->
+      <img
+        src={flag}
+        alt={`Vlag van ${name}`}
+        class="w-14 h-14 rounded-full border-2 border-white shadow-md object-cover"
+      />
+      <!-- Verticaal gecentreerde naam + datum -->
+      <div class="flex flex-col justify-center leading-tight">
+        <h3 class="text-lg font-semibold text-neutral-900 dark:text-white leading-snug m-0">{name}</h3>
+        <p class="text-sm text-neutral-500 leading-none mt-1 m-0">{date}</p>
+      </div>
+    </div>
+
+    <!-- Reviewtekst -->
+    <p class="italic">{text}</p>
+  </CardBody>
+</Card>
