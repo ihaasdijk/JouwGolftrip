@@ -48,13 +48,13 @@ const { title, description, ogImage, noindex, classes } = Astro.props
 		<Modal />
 		<Scriprs />
 
-		<script>
+<script>
   document.addEventListener('click', (e) => {
     const target = e.target;
     if (!(target instanceof Element)) return;
 
     const link = target.closest('a[href*="#"]');
-    if (!link) return;
+    if (!(link instanceof HTMLAnchorElement)) return;
 
     const url = new URL(link.href);
     const targetPath = url.pathname;
@@ -83,6 +83,8 @@ const { title, description, ogImage, noindex, classes } = Astro.props
     }
   });
 </script>
+
+
 	</body>
 </html>
 
