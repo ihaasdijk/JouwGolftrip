@@ -47,5 +47,35 @@ const { title, description, ogImage, noindex, classes } = Astro.props
 		<Footer />
 		<Modal />
 		<Scriprs />
+
+		<script>
+  			document.addEventListener('DOMContentLoaded', () => {
+    		const hash = window.location.hash
+    		if (hash) {
+      			const el = document.querySelector(hash)
+      		if (el) {
+        	// Even wachten zodat layout/DOM klaar is
+        	setTimeout(() => {
+          		el.scrollIntoView({ behavior: 'smooth' })
+        	}, 100)
+      		}
+    		}
+  		});
+		</script>
 	</body>
 </html>
+
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const hash = window.location.hash
+    if (hash) {
+      const el = document.querySelector(hash)
+      if (el) {
+        // Even wachten zodat layout/DOM klaar is
+        setTimeout(() => {
+          el.scrollIntoView({ behavior: 'smooth' })
+        }, 100)
+      }
+    }
+  });
+</script>
