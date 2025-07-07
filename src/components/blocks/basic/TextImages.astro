@@ -49,10 +49,8 @@ const {
 
 <Section id={id} classes={classes}>
 	<Row>
-		<Col
-  span="6"
-  classes={`self-center order-1 ${imagePosition === 'right' ? 'lg:order-1' : 'lg:order-2'}`}
->
+		<Col span="6" classes={`self-center order-1 ${imagePosition === 'right' ? 'lg:order-1' : 'lg:order-2'}`}
+		>
   <div class="text-image__content">
     <h2 class="text-image__heading" set:html={title} />
     <div class="text-image__text" set:html={text} />

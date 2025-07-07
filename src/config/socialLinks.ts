@@ -10,18 +10,8 @@ export interface SocialLink {
 
 export const socialLinks: SocialLink[] = [
 	{
-		name: 'facebook',
+		name: 'instagram',
 		link: '/',
-		icon: 'fb-icon'
-	},
-	{
-		name: 'twitter',
-		link: '/',
-		icon: 'twitter-icon'
-	},
-	{
-		name: 'discord',
-		link: '/',
-		icon: 'discord-icon'
+		icon: 'insta-icon'
 	}
 ]
